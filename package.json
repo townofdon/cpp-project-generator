@@ -4,7 +4,7 @@
   "description": "C++ Boilerplate Generator for MacOS",
   "main": "src/cli.js",
   "bin": {
-    "gen_cpp": "./src/cli.js"
+    "gen-cpp": "./src/cli.js"
   },
   "preferGlobal": true,
   "scripts": {

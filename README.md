@@ -25,7 +25,7 @@ npm install -g cpp-project-generator
 
 ```
 cd <path>
-gen_cpp <project_name> <args>
+gen-cpp <project_name> <args>
 ```
 
 ### Args
