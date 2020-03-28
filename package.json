@@ -1,0 +1,14 @@
+{
+  "name": "generate_cpp_project",
+  "version": "0.0.1",
+  "description": "C++ Boilerplate Generator for MacOS",
+  "main": "index.js",
+  "bin": {
+    "generate_cpp_project": "generate_cpp_project.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Don Juan Javier",
+  "license": "MIT"
+}
