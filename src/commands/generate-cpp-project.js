@@ -20,7 +20,17 @@ function templateCpp() {
 }
 
 
-function main() {
+function generateCppProject(projectPath) {
+
+  // if project path already exists, err
+
+  // mkdir /<projectPath>
+
+  // mkdir /<projectPath>/Sources
+
+  // createFile /<projectPath>/Sources/main.cpp
 
   const template = templateCpp();
 }
+
+module.exports = generateCppProject;

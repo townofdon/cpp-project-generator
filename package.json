@@ -1,14 +1,23 @@
 {
-  "name": "generate_cpp_project",
+  "name": "cpp-project-generator",
   "version": "0.0.1",
   "description": "C++ Boilerplate Generator for MacOS",
   "main": "index.js",
   "bin": {
-    "generate_cpp_project": "generate_cpp_project.js"
+    "gen_cpp": "./src/cli.js"
   },
+  "preferGlobal": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/townofdon/cpp-project-generator"
+  },
+  "bugs": {
+    "url": "https://github.com/townofdon/cpp-project-generator/issues"
+  },
+  "homepage": "https://github.com/townofdon/cpp-project-generator#readme",
   "author": "Don Juan Javier",
   "license": "MIT"
 }
