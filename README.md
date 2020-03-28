@@ -1,4 +1,4 @@
-# cpp-project-generator
+# C++ Project Generator
 
 Create SUPER basic project template for C++.
 
