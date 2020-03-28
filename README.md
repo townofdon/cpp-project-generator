@@ -15,3 +15,20 @@ Since Visual Studio is not available for MacOS users I wanted a quick way to spi
   - Get a windows machine instead
   - Develop in Microsoft Visual Studio
 
+## Installation
+
+```
+npm install -g cpp-project-generator
+```
+
+## Command usage
+
+```
+cd <path>
+gen_cpp <project_name> <args>
+```
+
+### Args
+
+- `<project_name>` - New project folder name e.g. `cpp-tutorial-01`
+- `<args>` - Documentation TBA
