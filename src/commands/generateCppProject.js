@@ -2,22 +2,24 @@
 const path = require('path');
 const errorIfPathPresent = require('../utils/error/errorIfPathPresent');
 const readFile = require('../utils/fs/readFile');
+const writeFile = require('../utils/fs/writeFile');
+const createDirectory = require('../utils/fs/createDirectory');
 
-function generateCppProject(projectPath) {
-
-  // if project path already exists, err
+function generateCppProject(projectName) {
+  const projectPath = path.resolve(process.cwd(), projectName);
+  const projectSourcesPath = path.resolve(projectPath, 'Sources');
+  const mainFilePath = path.resolve(projectSourcesPath, 'main.cpp');
 
   errorIfPathPresent(projectPath);
+  errorIfPathPresent(projectSourcesPath);
+  errorIfPathPresent(mainFilePath);
 
-  // mkdir /<projectPath>
+  const templatePath = path.resolve(global.appRoot, 'templates/main.cpp');
+  const template = readFile(templatePath);
 
-  // mkdir /<projectPath>/Sources
-
-  const template = readFile(path.resolve(process.cwd(), 'src/templates/main.cpp'));
-
-  console.log(template);
-
-  // createFile /<projectPath>/Sources/main.cpp
+  createDirectory(projectPath);
+  createDirectory(projectSourcesPath);
+  writeFile(mainFilePath, template);
 }
 
 module.exports = generateCppProject;
