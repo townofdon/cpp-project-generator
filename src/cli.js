@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 
-const generateCppProject = require("./commands/generate-cpp-project");
+const generateCppProject = require('./commands/generate-cpp-project');
 
-function main() {
+async function main() {
+  await generateCppProject();
 
-  console.log("✓ Success!");
+  console.log('✓ Success!');
   process.exit(0);
 }
 
