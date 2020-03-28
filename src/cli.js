@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const generateCppProject = require('./commands/generate-cpp-project');
+const generateCppProject = require('./commands/generateCppProject');
 
 async function main() {
   await generateCppProject();
