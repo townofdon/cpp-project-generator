@@ -2,7 +2,7 @@
   "name": "cpp-project-generator",
   "version": "0.0.1",
   "description": "C++ Boilerplate Generator for MacOS",
-  "main": "index.js",
+  "main": "src/cli.js",
   "bin": {
     "gen_cpp": "./src/cli.js"
   },
@@ -21,6 +21,8 @@
   "author": "Don Juan Javier",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^6.8.0"
-  }
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.1"
+  },
+  "dependencies": {}
 }

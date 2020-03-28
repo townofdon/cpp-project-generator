@@ -1,10 +1,19 @@
 {
     "env": {
-        "browser": true,
+        "browser": false,
         "commonjs": true,
-        "es6": true
+        "es6": true,
+        "node": true,
+        "shared-node-browser": true
     },
-    "extends": "eslint:recommended",
+    "extends": [
+        "eslint:recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings"
+    ],
+    "plugins": [
+        "import"
+    ],
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
@@ -15,7 +24,7 @@
     "rules": {
         "indent": [
             "error",
-            "tab"
+            2
         ],
         "linebreak-style": [
             "error",
@@ -29,6 +38,11 @@
             "error",
             "always"
         ],
-        "no-trailing-spaces": "error"
+        "no-trailing-spaces": "error",
+        "import/no-unresolved": [2, {"commonjs": true, "amd": false}],
+        "import/named": 2,
+        "import/namespace": 2,
+        "import/default": 2,
+        "import/export": 2
     }
 }
